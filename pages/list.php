@@ -1,5 +1,5 @@
 <?php
-include_once("pages/classes.php");
+include_once("classes.php");
 $catId=$_POST["catId"];
 $items=null;
 if($catId!=0)
@@ -8,7 +8,7 @@ else
 $items=Item::getItems();
 foreach($items as $item)
 {
-echo $item->$itemName;
+    echo "<div>" . $item->itemName ."</div>";
 }
 
 // $str=json_encode($items);
