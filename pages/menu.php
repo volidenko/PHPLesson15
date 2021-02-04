@@ -1,4 +1,4 @@
-<ul class="nav nav-tabs nav-justified">
+<ul class="nav nav-tabs">
     <li class="nav-item">
         <a <?php echo ($page == 1) ? "class='nav-link active'" : "class='nav-link'" ?> href="index.php?page=1">Каталог</a>
     </li>

@@ -1,6 +1,6 @@
 <h3>Админ-панель</h3>
 <?php
-if (isset($_POST['additem'])) {
+if (!isset($_POST['additem'])) {
     ?>
     <form action="index.php?page=4" method="POST" enctype="multipart/form-data">
         <div class="form-group">
