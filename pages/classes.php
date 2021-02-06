@@ -51,13 +51,7 @@ class Tools
 
 class Customer
 {
-    public $id;
-    public $login;
-    public $pass;
-    public $roleId;
-    public $imagepath;
-    public $discount;
-    public $total;
+    public $id, $login, $pass, $roleId, $imagepath, $discount, $total;
 
     function __construct($login, $pass, $imagepath, $id = 0)
     {
@@ -134,8 +128,7 @@ class Customer
 
 class Category
 {
-    public $id;
-    public $category;
+    public $id, $category;
     function __construct($category, $id = 0)
     {
         $this->category = $category;
@@ -459,7 +452,7 @@ class Image
         }
     }
 
-    static function getImageByGoodId($itemId)
+    static function getImageByItemId($itemId)
     {
         try {
             $pdo = Tools::connect();
